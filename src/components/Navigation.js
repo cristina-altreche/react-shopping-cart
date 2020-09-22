@@ -34,11 +34,11 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     textTransform: "uppercase"
   },
-  span: {
-    backgroundColor: "red",
-    borderRadius: "42.5%",
-    padding: ".2rem"
-  }
+  // span: {
+  //   backgroundColor: "red",
+  //   borderRadius: "42.5%",
+  //   padding: ".2rem"
+  // }
 }));
 
 const Navigation = () => {
@@ -62,7 +62,7 @@ const Navigation = () => {
       
             <NavLink className={classes.link} to="/">Products</NavLink>
             <NavLink className={classes.link} to="/cart">
-              Cart <span className={classes.span}>{cart.length}</span>
+              Cart <span className={classes.span}>{cart.length > 0 && cart.length}</span>
             </NavLink>
 
        
