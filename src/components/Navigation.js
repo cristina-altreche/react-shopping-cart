@@ -4,12 +4,10 @@ import {
   AppBar,
   Toolbar,
   Typography,
-  
   IconButton,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles } from "@material-ui/core/styles";
-
 import CartContext from "../contexts/CartContext";
 
 const useStyles = makeStyles((theme) => ({
@@ -34,15 +32,17 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     textTransform: "uppercase"
   },
-  // span: {
-  //   backgroundColor: "red",
-  //   borderRadius: "42.5%",
-  //   padding: ".2rem"
-  // }
+  span: {
+   color: "white",
+   backgroundColor: "red",
+   width: "100px"
+   
+  }
 }));
 
 const Navigation = () => {
   const cart = useContext(CartContext);
+  console.log(cart)
   const classes = useStyles();
   return (
     <>
@@ -62,7 +62,7 @@ const Navigation = () => {
       
             <NavLink className={classes.link} to="/">Products</NavLink>
             <NavLink className={classes.link} to="/cart">
-              Cart <span className={classes.span}>{cart.length > 0 && cart.length}</span>
+              Cart <span className="checkoutNum" >{cart.cart.length}</span>
             </NavLink>
 
        
