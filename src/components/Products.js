@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import ProductContext from "../contexts/ProductContext";
 
+//PARENT --- PRODUCT CONTAINER
 // Components
 import Product from "./Product";
 

@@ -24,9 +24,10 @@
 	}
 
 	img {
-		object-fit: contain;
+		object-fit: cover;
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
+		width: 100%;
 		max-width: 333px;
 	}
 

@@ -1,5 +1,6 @@
 import React from 'react';
 
+// CHILD ----HOW THE PRODUCT IS SHOWN
 const Product = props => {
 	return (
 		<div className="product">
